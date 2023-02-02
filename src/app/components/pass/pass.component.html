@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <h1>Password strength checker</h1>
+  <label for="password">Enter your password:
+    <input type="password" id="password" class="wrapper__line" (keyup)="inptPassFn($event)">
+  </label>
+  <div class="indicatorWrapper">
+    <section *ngFor="let item of [1,2,3];"
+    class="indicator{{item}}"
+    [class.grey]="passStrength.styleSel.grey"
+    [class.red]="passStrength.styleSel.red"
+    [class.green]="passStrength.styleSel.green"
+    [class.redGreyGrey]="passStrength.styleSel.redGreyGrey"
+    [class.yellYellGrey]="passStrength.styleSel.yellYellGrey"></section>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+.wrapper{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.indicatorWrapper{
+  display: flex;
+  gap: 5px;
+}
+section[class^="indicator"] {
+  height: 10px;
+  width: 30px;
+  border: solid 1px grey;
+}
+.grey{
+  background-color: grey;
+}
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
+.redGreyGrey:nth-child(1){
+  background-color: red;
+}
+.redGreyGrey:nth-child(2){
+  background-color: grey;
+}
+.redGreyGrey:nth-child(3){
+  background-color: grey;
+}
+.yellYellGrey:nth-child(1){
+  background-color: yellow;
+}
+.yellYellGrey:nth-child(2){
+  background-color: yellow;
+}
+.yellYellGrey:nth-child(3){
+  background-color: grey;
+}
